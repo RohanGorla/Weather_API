@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/style.css" type="text/css" />
+</head>
+
+<body>
+    <div class="main">
+        <div class="info">
+            <div class="loc">
+                <!-- date country locatin lat lon -->
+                <h2 style="padding: 1%;">
+                    <%= date %>
+                        </h2">
+                        <h3>
+                            <%= location %>, <%= countryName %>
+                        </h3>
+                        <p style="padding: 1%;">
+                            lat: <%= coordinates.latitude %>
+                                / lon: <%= coordinates.longitude %>
+                        </p>
+            </div>
+            <div class="temp">
+                <!-- temp feels icon -->
+                <h1>
+                    <%= temperature %>
+                </h1>
+                <p>Feels like <%= feelsLike %>
+                </p>
+                <img src=<%=icon %> alt="">
+                <p>last updated: <%= time %>
+                </p>
+            </div>
+            <div class="footer">
+                <div class="innerFooter">
+                    <div class="cond">
+                        <!-- humidity condition -->
+                        <h5>
+                            <%= humidity %>
+                        </h5>
+                        <h5>
+                            <%= condition %>
+                        </h5>
+                    </div>
+                    <div class="wind">
+                        <h5>
+                            <%= windSpeed %>
+                                <%= windDirection %>
+                                    <%= windDegree %>
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
